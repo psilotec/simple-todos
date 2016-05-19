@@ -1,0 +1,17 @@
+{
+  "name": "simple-todos",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^0.14.8",
+    "react-addons-pure-render-mixin": "^0.14.8",
+    "react-dom": "^0.14.8"
+  },
+  "kadira": {
+    "appId": "RBpkeCbnE5Efu27kj",
+    "appSecret": "fc9aaac3-8b5f-41eb-9c2f-0e3991aa420e"
+  }
+}
