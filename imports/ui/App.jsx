@@ -43,7 +43,7 @@ class App extends Component {
         // Clear task form
         this.refs.textInput.value = '';
         //Clear cost form
-        this.refs.costInput.value = '';
+        ReactDOM.findDOMNode(this.refs.costInput).value = '';
 
 
         //ADDITION/SUBTRACTION LOGIC TO tasks.js HERE

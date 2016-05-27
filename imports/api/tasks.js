@@ -17,7 +17,7 @@ Meteor.methods({
         //Make sure that text is a String
         check(text, String);
         //Make sure that cost is a Number
-        check(cost, Number);
+//        check(cost, Number);
 
         //debug
         console.log(text);
@@ -28,7 +28,7 @@ Meteor.methods({
             throw new Meteor.Error('not-authorized');
         }
 
-        //Actual database insertion
+        //Database insertion
         Tasks.insert({
             text,
             cost,
@@ -49,3 +49,4 @@ Meteor.methods({
         Tasks.update(taskId, { $set: { checked: setChecked } });
     },
 });
+

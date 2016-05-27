@@ -123,3 +123,8 @@ header .hide-completed {
         padding-bottom: 5px;
     }
 }
+
+li .cost {
+    float: right;
+    padding-right: 20px;
+}
