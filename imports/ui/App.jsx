@@ -96,7 +96,7 @@ class App extends Component {
                                 ref="costInput"
                                 placeholder="Type to add cost"
                             />
-                            <input type="submit" ref="textCostSubmit" value="Submit" />
+                            <input type="submit" value="Submit" />
                         </form> : ''
                     }
                 </header>
@@ -118,8 +118,6 @@ App.propTypes = {
 
 //exports createContainer function which queries the tasks collection
 export default createContainer(() => {
-    Meteor.subscribe('tasks');
-
     return {
         tasks: Tasks.find({}, { sort: { createdAt: -1 } }).fetch(),
         incompleteCount: Tasks.find({ checked: { $ne: true } }).count(),
